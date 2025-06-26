@@ -1,0 +1,5 @@
+6/26/25
+  - create a book-reader notebook in notebooklm
+  - create a README.md file (done at project creation)
+  - create a tasks.txt file (this file)
+  - create a prompts.txt file (holds prompts used to work with ai)

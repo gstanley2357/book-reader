@@ -1,0 +1,35 @@
+Prompts
+
+Generate a document reader application. book-reader-ui.png has the user interface I want.
+The main central pane:
+  This is where the document I'm reading is shown.
+  Documents can be text, pdf, or from a web page.
+  There needs to be controls for navigating through the document.
+  The text is selectable.
+The left outline pane:
+  This contains an outline or table of contents for the document.
+  It also has a master list of all of the definitions.
+  When a node or definition is clicked, the document will scroll to that location.
+The right pane:
+  This contains the data for the selected text.
+  That data includes:
+    A list of definitions of the selected text. Definitions also have a context connected with them.
+    Links to web pages or files that serve as references for the selected text.
+    Notes that are attached to the selected text.
+    The type of the selected text. Examples are source code, programming term, identifier, operator.
+    The location and range of the selected text.
+Actions:
+  Select text.
+  Add, delete, or change a definition.
+  Change the definition context.
+  Add a new document to the database.
+  Add, delete, or change a link.
+  Add, delete, or change a note.
+  Change the type of the selected text.
+  Create a synonym for the selected text.
+  The document's text is highlighted if it can be found in the database.
+The selected text is the main object of the system. It is unique in the database. When a definition, link, location or other
+data is attached to the selected text, it is to that unique data. Selected text can be one word or symbol or it can be multiple words.
+Selected text can have synonyms. In that case, attached data is shared between all the synonyms.
+The application should be written in python3. Data should be stored in a sqlite database. Please choose an appropriate application
+framework.
