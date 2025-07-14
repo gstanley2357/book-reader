@@ -6,8 +6,8 @@
 - [X] Create new Rails 7 application: `rails new document_reader --database=sqlite3`
 - [X] Add required gems to Gemfile (pdf-reader, nokogiri, stimulus-rails, etc.)
 - [X] Run `bundle install`
-- [ ] Configure database: `rails db:create`
-- [ ] Set up basic application layout structure
+- [X] Configure database: `rails db:create`
+- [X] Set up basic application layout structure
 
 ### 1.2 Database Schema Creation
 - [ ] Create and run migration for documents table
