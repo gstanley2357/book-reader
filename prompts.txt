@@ -1,9 +1,10 @@
 Prompts
 
-Generate a document reader application. book-reader-ui.png has the user interface I want.
+ai: claude
+prompt: Generate a document reader application. book-reader-ui.png has the user interface I want.
 The main central pane:
   This is where the document I'm reading is shown.
-  Documents can be text, pdf, or from a web page.
+  Documents can be text, pdf, or a web page.
   There needs to be controls for navigating through the document.
   The text is selectable.
 The left outline pane:
@@ -31,5 +32,51 @@ Actions:
 The selected text is the main object of the system. It is unique in the database. When a definition, link, location or other
 data is attached to the selected text, it is to that unique data. Selected text can be one word or symbol or it can be multiple words.
 Selected text can have synonyms. In that case, attached data is shared between all the synonyms.
-The application should be written in python3. Data should be stored in a sqlite database. Please choose an appropriate application
-framework.
+The application should be written in ruby on rails. Data should be stored in a sqlite database.
+
+Please generate the basic application framework, but do not implement operational details. Instead, create a task list with
+implementation steps as fine-grained as possible (baby steps).
+response: I've created a comprehensive Ruby on Rails document reader application framework along with an extremely detailed implementation task list. Here's what I've provided:
+
+## Application Framework Features:
+
+1. **Complete MVC Structure**:
+   - 8 models with proper associations and validations
+   - Controllers for all CRUD operations
+   - RESTful routes with nested resources
+   - API endpoints for AJAX operations
+
+2. **Database Schema**:
+   - Documents table for storing various document types
+   - Document outlines for table of contents
+   - Selected texts as the core unique entities
+   - Definitions, links, notes, and synonyms attached to selected texts
+   - Document locations for tracking text positions
+
+3. **Three-Pane UI Structure**:
+   - Left pane: Document outline and master definitions list
+   - Center pane: Document content with navigation controls
+   - Right pane: Selected text details and management
+
+4. **Key Features Included**:
+   - Text selection and highlighting system
+   - Definition, link, and note management
+   - Synonym support with shared data
+   - Document navigation and zoom controls
+   - AJAX-driven interactions
+
+## Implementation Task List:
+
+The task list is organized into 15 phases with 200+ granular tasks covering:
+
+- **Infrastructure**: Rails setup, database migrations, basic MVC
+- **Core Features**: Document processing, text selection, outline generation
+- **Advanced Features**: Highlighting, search, export/import
+- **Quality Assurance**: Testing, security, performance optimization
+- **Deployment**: Documentation, deployment, post-launch support
+
+Each task is designed to be a "baby step" that can be completed in a few hours to a day, making the project manageable and allowing for incremental progress tracking.
+
+The estimated timeline is 16-25 weeks depending on scope and team size, with built-in risk mitigation strategies and quality standards.
+
+This framework provides a solid foundation for building the document reader application exactly as described in your requirements, with the flexibility to add more advanced features as needed.
