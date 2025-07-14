@@ -3,7 +3,7 @@
 ## Phase 1: Project Setup and Basic Infrastructure
 
 ### 1.1 Rails Application Setup
-- [ ] Create new Rails 7 application: `rails new document_reader --database=sqlite3`
+- [X] Create new Rails 7 application: `rails new document_reader --database=sqlite3`
 - [ ] Add required gems to Gemfile (pdf-reader, nokogiri, stimulus-rails, etc.)
 - [ ] Run `bundle install`
 - [ ] Configure database: `rails db:create`
