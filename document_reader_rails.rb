@@ -607,98 +607,99 @@ export default class extends Controller {
 # app/assets/stylesheets/application.css
 .document-reader {
   display: flex;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-}
+    height: 100vh;
+      font-family: Arial, sans-serif;
+      }
 
-.left-pane {
-  width: 250px;
-  background-color: #f5f5f5;
-  border-right: 1px solid #ddd;
-  overflow-y: auto;
-  padding: 10px;
-}
+      .left-pane {
+        width: 250px;
+          background-color: #f5f5f5;
+            border-right: 1px solid #ddd;
+              overflow-y: auto;
+                padding: 10px;
+                }
 
-.center-pane {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
+                .center-pane {
+                  flex: 1;
+                    display: flex;
+                      flex-direction: column;
+                        background-color: white;
+                        }
 
-.right-pane {
-  width: 300px;
-  background-color: #f9f9f9;
-  border-left: 1px solid #ddd;
-  padding: 10px;
-  overflow-y: auto;
-}
+                        .right-pane {
+                          width: 300px;
+                            background-color: #f9f9f9;
+                              border-left: 1px solid #ddd;
+                                padding: 10px;
+                                  overflow-y: auto;
+                                  }
 
-.document-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  background-color: #f8f8f8;
-}
+                                  .document-controls {
+                                    display: flex;
+                                      justify-content: space-between;
+                                        align-items: center;
+                                          padding: 10px;
+                                            border-bottom: 1px solid #ddd;
+                                              background-color: #f8f8f8;
+                                              }
 
-.document-content {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  user-select: text;
-}
+                                              .document-content {
+                                                flex: 1;
+                                                  padding: 20px;
+                                                    overflow-y: auto;
+                                                      user-select: text;
+                                                      }
 
-.zoom-controls {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+                                                      .zoom-controls {
+                                                        display: flex;
+                                                          align-items: center;
+                                                            gap: 10px;
+                                                            }
 
-.outline-section, .definitions-section {
-  margin-bottom: 20px;
-}
+                                                            .outline-section, .definitions-section {
+                                                              margin-bottom: 20px;
+                                                              }
 
-.outline-section h3, .definitions-section h3 {
-  margin: 0 0 10px 0;
-  font-size: 14px;
-  color: #333;
-}
+                                                              .outline-section h3, .definitions-section h3 {
+                                                                margin: 0 0 10px 0;
+                                                                  font-size: 14px;
+                                                                    color: #333;
+                                                                    }
 
-.selection-details h3 {
-  margin: 0 0 15px 0;
-  font-size: 16px;
-  color: #333;
-}
+                                                                    .selection-details h3 {
+                                                                      margin: 0 0 15px 0;
+                                                                        font-size: 16px;
+                                                                          color: #333;
+                                                                          }
 
-.text-info, .definitions-section, .links-section, .notes-section, .synonyms-section {
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: white;
-  border-radius: 4px;
-  border: 1px solid #eee;
-}
+                                                                          .text-info, .definitions-section, .links-section, .notes-section, .synonyms-section {
+                                                                            margin-bottom: 20px;
+                                                                              padding: 10px;
+                                                                                background-color: white;
+                                                                                  border-radius: 4px;
+                                                                                    border: 1px solid #eee;
+                                                                                    }
 
-button {
-  padding: 8px 12px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-}
+                                                                                    button {
+                                                                                      padding: 8px 12px;
+                                                                                        background-color: #007bff;
+                                                                                          color: white;
+                                                                                            border: none;
+                                                                                              border-radius: 4px;
+                                                                                                cursor: pointer;
+                                                                                                  font-size: 12px;
+                                                                                                  }
 
-button:hover {
-  background-color: #0056b3;
-}
+                                                                                                  button:hover {
+                                                                                                    background-color: #0056b3;
+                                                                                                    }
 
-.highlighted-text {
-  background-color: #ffff99;
-  cursor: pointer;
-}
+                                                                                                    .highlighted-text {
+                                                                                                      background-color: #ffff99;
+                                                                                                        cursor: pointer;
+                                                                                                        }
 
-.selected-text {
-  background-color: #87ceeb;
-}
+                                                                                                        .selected-text {
+                                                                                                          background-color: #87ceeb;
+                                                                                                          }
+                                                                                                          
