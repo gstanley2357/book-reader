@@ -1,0 +1,81 @@
+<div class="reader-page" data-controller="reader">
+  <header class="reader-header">
+    <h1>Text Reader</h1>
+    <p class="reader-subtitle">
+      Load text from a file or the clipboard, then replace, append, or insert at the cursor.
+    </p>
+  </header>
+
+  <section class="reader-toolbar">
+    <div class="toolbar-group">
+      <label class="file-picker">
+        <span>Choose File</span>
+        <input
+          type="file"
+          accept=".txt,.md,.text,.log,.csv,.json,.rb,.js,.html,.css"
+          data-reader-target="fileInput"
+          data-action="change->reader:fileSelected"
+        >
+      </label>
+    </div>
+
+    <div class="toolbar-group">
+      <button type="button" data-action="reader:replaceFromFile">Replace from File</button>
+      <button type="button" data-action="reader:appendFromFile">Append from File</button>
+      <button type="button" data-action="reader:insertFromFile">Insert from File</button>
+    </div>
+
+    <div class="toolbar-group">
+      <button type="button" data-action="reader:replaceFromClipboard">Replace Clipboard</button>
+      <button type="button" data-action="reader:appendFromClipboard">Append Clipboard</button>
+      <button type="button" data-action="reader:insertFromClipboard">Insert Clipboard</button>
+    </div>
+  </section>
+
+  <section class="reader-status-bar">
+    <div>
+      File:
+      <strong data-reader-target="fileName">none</strong>
+    </div>
+
+    <div>
+      Cursor:
+      <strong data-reader-target="cursorPosition">char 0</strong>
+    </div>
+
+    <div>
+      Line:
+      <strong data-reader-target="lineNumber">1</strong>
+      /
+      Col:
+      <strong data-reader-target="columnNumber">1</strong>
+    </div>
+
+    <div>
+      Length:
+      <strong data-reader-target="textLength">0</strong>
+    </div>
+  </section>
+
+  <section class="reader-editor-wrap">
+    <textarea
+      class="reader-editor"
+      spellcheck="false"
+      placeholder="Your text will appear here..."
+      data-reader-target="editor"
+      data-action="click->reader:updateCursor keyup->reader:updateCursor input->reader:updateCursor select->reader:updateCursor"
+    ></textarea>
+  </section>
+
+  <section class="reader-help">
+    <h2>Commands</h2>
+    <ul>
+      <li><strong>Replace from File</strong> — replaces the current text with the selected file contents</li>
+      <li><strong>Append from File</strong> — adds the selected file contents to the end</li>
+      <li><strong>Insert from File</strong> — inserts the selected file contents at the cursor</li>
+      <li><strong>Replace Clipboard</strong> — replaces the current text with clipboard text</li>
+      <li><strong>Append Clipboard</strong> — adds clipboard text to the end</li>
+      <li><strong>Insert Clipboard</strong> — inserts clipboard text at the cursor</li>
+    </ul>
+  </section>
+</div>
